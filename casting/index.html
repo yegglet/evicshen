@@ -6,11 +6,20 @@
 
 <title>PHYSCI 70: Introduction to Digital Fabrication</title>
 <meta name="description" content="Index Page">
-<script src="./js/vendor/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
-  <link href="../style.css" rel="stylesheet">
+<script src="../js/vendor/jquery.min.js"></script>
+<script>
+	$(function(){
+	  $("#header").load("../header.html");
+	  $("#footer").load("../footer.html");
+	});
+</script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<link href="../css/style.css" rel="stylesheet">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<script src="../js/vendor/modernizr.js"></script>
 </head>
 <body>
 
@@ -22,6 +31,23 @@
 		<h3> Molding and Casting</h3>
 	</div >
 
+	<div class="col-md-9">
+
+
+	<h3> CNC Milling Wax Positive</h3>
+        <li>Import your STL file into Aspire and configure the tool paths for the Shop Bot.</li><br>
+        <img width="400"  src="./voltairemodel.jpg" alt="voltairemodel"><br><br>
+        <li>Using a coarse end mill, the Shop Bot performs the initial rough cut into the block of wax </li><br>
+        <img width="400"  src="./waxrough.jpg" alt="waxrough"><br><br>
+        <li>A finer end mill makes a much smoother finishing pass over the block of wax. </li><br>
+        <img width="400"  src="./waxfinish.jpg" alt="waxrough"><br><br>
+        <li>A mold mixture is poured onto the wax positive.  Once the mold is cured, it can be extracted and used for casting resin, hydrostone, low melting point metals, or chocolate (if your mold is food safe).  </li><br>
+        <img width="400"  src="./waxandmold.jpg" alt="mold"><br><br>
+        <img width="400"  src="./hydrostone.jpg" alt="hydrostone"><br><br>
+        <img width="400"  src="./pewtervoltaire.jpg" alt="pewter"><br><br>
+        <img width="400"  src="./foodsafe.jpg" alt="foodsafe"><br><br>
+        <img width="400"  src="./blackgloves.jpg" alt="waxrough"><br><br>
+        
         
 	<h3> Casting Body Parts</h3>
         <li>Alginate molds can be used to cast body parts.  Note, the molds are very fragile and have a limited number of uses before they disintegrate.</li><br>
@@ -68,18 +94,21 @@
         <img width="400"  src="./vinylcutup.jpg" alt="vinylcutup"><br><br>
         <iframe width="400" height="541" src="./cutupcast.mp4" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br><br>
         
-
+        <iframe width="799" height="449" src="https://www.youtube.com/embed/55WrP4AqgUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+        <h3> Lost Foam Casting </h3>
+        <iframe width="799" height="449" src="https://www.youtube.com/embed/u47fFxdMDXQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 	</div >
-
+</div>
 
 
 
 <div id="footer"></div>
 
-<script src="./js/vendor/jquery.min.js"></script>
-<script src="./js/foundation.min.js"></script>
-<script src="./js/htdaa.js"></script>
+<script src="../js/vendor/jquery.min.js"></script>
+<script src="../js/foundation.min.js"></script>
+<script src="../js/htdaa.js"></script>
 
 
 </body>
