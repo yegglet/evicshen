@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>PHYSCI 70: Introduction to Digital Fabrication</title>
+<meta name="description" content="Index Page">
+
+<script src="js/vendor/jquery.min.js"></script>
+<script> 
+	$(function(){
+	  $("#header").load("root_header.html"); 
+	  $("#footer").load("root_footer.html"); 
+	});
+</script>
+
+
+<link href="css/style.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<script src="js/vendor/modernizr.js"></script>
+
+<script type="text/javascript">
+var pages = new Array(
+	["https://lcooke238.github.io/PS70/","Lauren Cooke"],
+	["https://jessie9111.github.io/PHYSCI-70/","Jessica Edwards"],
+	["https://samjo4788.github.io/PHYSCI-70/","Samantha Jones"],
+	["https://haeyun.github.io/PHYSCI-70/","Haeyun Lee"],
+	["https://remilarius.github.io/PS70/","Joy Lin"],
+	["https://juhye-m.github.io/ps70/","JuHye Mun"],
+	["https://erikschreiner.github.io/PHYSCI-70/","Erik Schreiner"],
+	["https://azswartz.github.io/PS-70/","Avi Swartz"],
+	["https://kwantlin.github.io/physci-70/","Kathryn Wantlin"],
+	["https://aspartate.github.io/personal_website/","Andrew Zhang"],
+	["http://amymzhou.com/ps70/","Amy Zhou"]
+)
+
+var pages2020 = new Array(
+	
+	["https://GhadaTalebAmer.github.io/PS70","Ghada Amer"],
+	["https://arenasjuan.github.io/ps70","Juan Arenas"],
+	["https://kian2attari.github.io/kian2attari.github.io","Kian Attari"],
+	["https://athenac7842.github.io/PS70","Athena Capo-Battaglia"],
+	["https://ElizabethGallardo.github.io/PHYSCI-70","Elizabeth Gallardo"],
+	["https://abrahamjm.github.io/physci70-assignments-ajm","Abraham Joyner-Meyers"],
+	["https://mariekonopacki.github.io/physci70","Marie Konopacki"],
+	["https://pkumar1999.github.io/PS70","Prashanth Kumar"],
+	["https://KassiaLove.github.io/PS70-assignments","Kassia Love"],
+	["https://FouziaRaza17.github.io/ps70","Fouzia Raza"],
+	["https://psysci70.herokuapp.com/","Juliana Rogoff"],
+	// ["https://ksanok.github.io/PHYS-70","Kyle Sanok"],
+	["https://tsevilla16.github.io/TeddySevilla-PS70","Teddy Sevilla"],
+	["https://KelleyS1.github.io/PHYSCI-70","Kelley Sheehan"],
+	["https://mshirazi6.github.io/PHYSCI-70","Madison Shirazi"],
+	["https://nishita717.github.io/PS-70-Assignments","Nishita Sinha"],
+	["https://sullivan-sean.github.io/physci-70","Sean Sullivan"],
+	["https://tomkinsc.github.io/harvard-ps70","Christopher Tomkins-Tinch"], 
+	["https://mturner6300.github.io/PHYSCI-70/simple-demo/","Meghan Turner"],
+	["https://sophiecwebster.github.io/PHYSCI-70","Sophie Webster"],
+	["https://juliozuniga.github.io/physci70-assignments","Julio Zuniga"],
+
+)
+
+var indices = []
+for (var i = 0; i < pages.length; ++i) indices.push(i)
+function get_time() {
+   if (window.performance != undefined)
+      if (window.performance.now != undefined) {
+         timer = "performance.now"
+         return performance.now()
+         }
+   timer = "Date.now"
+   return Date.now()
+   }
+var t0 = get_time()
+function random_page() {
+   var t = get_time()
+   var seconds = (t-t0)/1000.0
+   var ms = seconds-Math.floor(seconds)
+   index = Math.floor(indices.length * ms)
+   value = indices[index]
+   indices.splice(index,1)
+   if (indices.length == 0) {
+      indices = []
+      for (var i = 0; i < pages.length; ++i) indices.push(i)
+      }
+   //alert(pages[value][0]+" "+ms.toFixed(3)+" "+(value+1)+"/"+pages.length)
+   alert(pages[value][1])
+   window.open(pages[value][0])
+   }
+</script>
+
+</head>
+
+
+
+<body>
+
+<div id="header"></div>
+
+<div class="row">
+	<div class="large-12 columns">
+		
+
+		<h3> Students</h3>
+
+		<div style="margin-left:2.5%">
+			<p> <a href="javascript:random_page()">random page</a><br>
+			<br>
+			<script type="text/javascript">
+			for (i = 0; i < pages.length; ++i) {
+			   document.write("<a href="+pages[i][0]+">"+pages[i][1]+"</a><br>")
+			   }
+			</script>
+			</p>
+		</div>
+
+		<h3> Previous Students (Spring 2020) </h3>
+
+		<div style="margin-left:2.5%">
+			<p> <a href="javascript:random_page()">random page</a><br>
+			<br>
+			<script type="text/javascript">
+			for (i = 0; i < pages2020.length; ++i) {
+			   document.write("<a href="+pages2020[i][0]+">"+pages2020[i][1]+"</a><br>")
+			   }
+			</script>
+			</p>
+		</div>
+		
+
+		<h3>Teaching Staff </h3>
+
+		<div style="margin-left:2.5%">
+			<p>	
+				
+				<a href="http://nathanmelenbrink.com/"> Nathan Melenbrink</a><br>
+				<a href="http://fab.cba.mit.edu/classes/863.18/Harvard/people/victoria/index.html"> Victoria Shen</a><br>
+				<a href="https://sullivan-sean.github.io/physci-70">Sean Sullivan</a>
+			</p>
+		</div>
+
+		<h3>Additional Support</h3>
+
+		<div style="margin-left:2.5%">
+		<p>	
+			<a href="https://roberthart56.github.io/projects/index.html"> Rob Hart</a><br>
+			<a href= 'https://danielbrosenberg.github.io/physci70' > Daniel Rosenberg </a> <br> 
+			<a href='http://fab.cba.mit.edu/classes/863.17/Harvard/people/KevinGuiney/index.html'> Kevin Guiney </a> <br> 
+			Jim MacArthur <br>
+            
+			</p>
+		</div>
+
+
+</div>
+
+<div id="footer"></div>
+
+<script src="js/vendor/jquery.min.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/htdaa.js"></script>
+
+
+</body>
+</html>
